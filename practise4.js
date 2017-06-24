@@ -25,7 +25,7 @@ function mul() {
     var res = 0;
     for (var i = 0; i < arguments.length; i++) {
         if (!isNaN(parseInt(arguments[i]))) {
-            if (res == 0) {
+            if (res === 0) {
                 res = arguments[i];
             } else {
                 res *= arguments[i];
