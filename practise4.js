@@ -1,6 +1,6 @@
 'use strict';
 
-/*var calculator = {
+var calculator = {
     a: null,
     b: null,
     read: function () {
@@ -19,9 +19,9 @@
 
 calculator.read();
 console.log(calculator.sum());
-console.log(calculator.mul());*/
+console.log(calculator.mul());
 
-/*function mul() {
+function mul() {
     var res = 0;
     for (var i = 0; i < arguments.length; i++) {
         if (!isNaN(parseInt(arguments[i]))) {
@@ -35,7 +35,7 @@ console.log(calculator.mul());*/
     return res;
 }
 console.log(mul(1, "str", 2, 3, true)); // 6
-console.log(mul(null, "str", false, true)); // 0*/
+console.log(mul(null, "str", false, true)); // 0
 
 var country = {
     name: "Украина",
