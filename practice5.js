@@ -39,5 +39,3 @@ coolPlayer.volume('50');
 console.log(coolPlayer.volume());
 coolPlayer.volume('45tyt');
 console.log(coolPlayer.volume());
-
-
