@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Навигация в DOM</title>
+    <title>Самовызывающиеся функции</title>
     <meta charset="utf-8" />
 </head>
 <body>
-<div>Пользователи:</div>
-<ul>
-    <li>Маша</li>
-    <li>Вовочка</li>
-</ul>
-<!-- комментарий -->
+<form>
+    <input id="inp" type="text" />
+    <button type="button">Один</button>
+    <button type="button">Два</button>
+    <button type="button">Три</button>
+    <button type="button">Четыре</button>
+    <button type="button">Пять</button>
+</form>
 <script>
     'use strict';
-
-    var head = window.document.children[0].children[0];
-    var ul = window.document.children[0].children[1].children[1];
-    console.dir(head);
-    console.dir(ul);
+    var inp = document.getElementById("inp");
+    var btns = document.getElementsByTagName("button");
+    for (let i = 0; i < btns.length; i++) {
+        let btn = btns[i];
+        btns[i].onclick = () => inp.value += (i + 1);
+    }
 </script>
 </body>
 </html>
